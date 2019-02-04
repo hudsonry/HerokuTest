@@ -1,7 +1,4 @@
-h1.cursive{
-    font-family: Florence, cursive;
+h1{
+    text-align: center;
+    color: blue;
 }
-
-p.sansserif {
-    font-family: Helvetica, Arial, sans-serif;
- }
