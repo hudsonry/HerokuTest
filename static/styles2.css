@@ -8,12 +8,8 @@ h1{
     color:rgb(64, 103, 212);
 }
 body{
-    background-image: radial-gradient(rgb(238, 16, 16), gray);
+    background-image: radial-gradient(green, blue);
     background-size: cover;
-}
-img{
-    width: 250px;
-    height: 250px;
 }
 a{
     font-size: 25px;
