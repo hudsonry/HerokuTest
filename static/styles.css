@@ -3,5 +3,6 @@ h1{
     color: blue;
 }
 body{
-    background-color: gray;
+    background-image: linear-gradient(blue, purple);
+    background-size: cover;
 }
