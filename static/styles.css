@@ -24,3 +24,9 @@ a{
     width:352px; //or something close
     margin:0 auto; 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
