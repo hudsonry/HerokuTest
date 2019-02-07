@@ -20,7 +20,7 @@ a{
     font-family: Arial;
     color: black;
 }
-ul {
+#navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,3 +50,17 @@ li a:hover {
 .active {
     background-color: #4CAF50;
   }
+.boxed {
+    border: 2px solid black ;
+    font-family: Arial;
+    font-size: 50 px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+#contacts{
+    width: 125px;
+    height: 125px; 
+    margin-left: 30%;
+    margin-right: 30%;
+}
