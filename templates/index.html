@@ -13,6 +13,7 @@
     </ul>
     <a href="/">Go to Home Page</a>
     <h1>Welcome to the Website of Ryan Hudson</h1>
+    <h2>About Me</h2>
     <div class="boxed">
             Hi, I'm Ryan Hudson. I have coding skills in Java, Python, Swift, CSS and HTML. 
             Use the links above to view my portfolio, which consists of various projects
@@ -21,7 +22,7 @@
             to access me by email or phone.
     </div>
     <div class="section" id="skills">
-            <h1><span>My Skills</span></h1>
+            <h2><span>My Skills</span></h2>
             <ul>
                 <li>HTML <br />
                     <progress min="0" max="100" value="40"></progress>
@@ -40,5 +41,45 @@
                 </li>
             </ul>
         </div>
+        <br></br>
+        <div class="section">
+                <h2><span>Contact Me</span></h2>
+                
+                <p>Fill out the form below to contact me.</p>
+                     
+                <form>
+                    <input name="name" placeholder="Name" type="text" required /><br/>
+                    <input name="email" placeholder="Email" type="email" required /><br/>
+                    <textarea name="message" placeholder="Message" required ></textarea>
+                    <input type="submit" value="SEND" class="submit" />
+                </form>
+            </div>
+
+            <div class="section" id="homeimages">
+                    <h1><span>View My Portfolo</span></h1>
+                    <div>
+                        <a href="https://sites.google.com/pascack.org/atcs-portfolio-hudson/java" target="_blank">
+                            <img alt="Java" src="https://sdtimes.com/wp-content/uploads/2018/03/jW4dnFtA_400x400.jpg" width = 250 height = 250 />
+                        </a>
+                        <a href="https://sites.google.com/pascack.org/atcs-portfolio-hudson/python">
+                            <img alt="Python" src="https://www.python.org/static/opengraph-icon-200x200.png" width = 250 height = 250/>
+                        </a>
+                        <a href="https://sites.google.com/pascack.org/atcs-portfolio-hudson/swift">
+                            <img alt="Swift" src="https://raw.githubusercontent.com/github/explore/8fb8b0e9d61d266721825ce116060773ea2503c2/topics/swift/swift.png" width = 250 height = 250/>
+                        </a>
+                    </div>
+                </div>
+    
+    <!-- <canvas id="testCanvas" width="500px" height="500px" style="border: 3px solid black"><</canvas>
+    <script>
+        var canvas = document.getElementById("testCanvas");
+        var ctx = canvas.getContext("2d")
+        ctx.beginPath();
+        ctx.fillStyle = "#ffffff";
+        ctx.rect(30,30,100,50);
+        ctx.fill;
+        ctx.closePath();
+    </script> -->
+
 </body>
 </html>
