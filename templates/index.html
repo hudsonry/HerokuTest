@@ -8,18 +8,36 @@
     <ul id="navigation">
         <li><a href="/">Home</a></li>
         <li><a href="/page2">Page 2</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
     </ul>
     <a href="/">Go to Home Page</a>
-    <h1>Welcome to the Website of Ryan Hudson</h1>
+    <div id="typewriter"></div>
+    <script>
+            var str = "<h1>Welcome to the Website of Ryan Hudson!</h1>",
+            i = 0,
+            isTag,
+            text;
+    
+        (function type() {
+            text = str.slice(0, ++i);
+            if (text === str) return;
+    
+            document.getElementById('typewriter').innerHTML = text;
+    
+            var char = text.slice(-1);
+            if( char === '<' ) isTag = true;
+            if( char === '>' ) isTag = false;
+    
+            if (isTag) return type();
+            setTimeout(type, 80);
+        }());
+    </script>
     <h2>About Me</h2>
     <div class="boxed" id="demo">
-            Hi, I'm Ryan Hudson. I have coding skills in Java, Python, Swift, CSS and HTML. 
-            Use the links above to view my portfolio, which consists of various projects
-            I have completed in these languages and an overview of what they are. Additionally,
-            I have attached a resume. If you wish to contact me, please visit the Contact tab above
-            to access me by email or phone.
+            Hi, I'm Ryan Hudson. I have coding skills in Java, Python, Swift, CSS and HTML and intend to continue
+            my study of computer science and programming languages in the future. 
+            Use the image links on this page to view my portfolio, which consists of various projects
+            I have completed in these languages and an overview of what they are. If you wish to contact me,
+            utilize the Contact section below and I will try to get back to you as soon as possible.
     </div>
     <div class="section" id="skills">
             <h2><span>My Skills</span></h2>
