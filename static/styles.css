@@ -93,3 +93,23 @@ ul{
     margin-block-end:-30px;
     list-style-type: none;
 }
+#javaportfolioaccess{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#pythonportfolioaccess{
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+}
+#swiftportfolioaccess{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+#webdevportfolioaccess{
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+}
