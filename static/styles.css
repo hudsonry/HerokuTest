@@ -9,7 +9,7 @@ h1{
 
 }
 body{
-    background-image: linear-gradient(white,rgb(170, 183, 219),blue, navy, black);
+    background-image: linear-gradient(red,pink,blue, orange, white);
     background-size: 100%;
     
 }

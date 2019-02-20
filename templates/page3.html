@@ -7,21 +7,55 @@
 <body>
     <ul id="navigation">
         <li><a href="/">Home</a></li>
-        <li><a href="/page2">GPA Calculator</a></li>
+        <li><a href="/page2">Transcript</a></li>
         <li><a href="/page3">Page 3</a></li>
     </ul>
     <a href="/">Go to Home Page</a>
     <h1>Welcome to Page 3</h1>
 
-    <canvas id="testCanvas" width="500px" height="500px" style="border: 3px solid black"><</canvas>
-    <script>
-        var canvas = document.getElementById("testCanvas");
-        var ctx = canvas.getContext("2d")
-        ctx.beginPath();
-        ctx.fillStyle = "#ffffff";
-        ctx.rect(30,30,100,50);
-        ctx.fill;
-        ctx.closePath();
-    </script>
+    <canvas id="svs" width="500" height="500" style="border:3px solid black"></canvas>
+
+    <div>Use Keyboard to draw, press r to clear screen</div>
+
+<script>
+    var stage = document.getElementById('svs'), // Get the canvas element by Id
+    ctx = stage.getContext('2d'), // Canvas 2d rendering context
+    x = 10, //intial horizontal position of drawn rectangle
+    y = 10, //intial vertical position of drawn rectangle
+    w = 20, //width of the drawn rectangle
+    h = 20; //height of the drawn rectangle
+
+    //Draw Rectangle function		
+    function drawRect(x,y,w,h) {
+    ctx.fillStyle = 'white';
+    ctx.fillRect(x, y, w, h); //This will draw a rectangle of 20x20
+    }
+
+    drawRect(x,y,w,h); //Drawing rectangle on initial load
+
+    //move rectangle inside the canvas using arrow keys
+    window.onkeydown = function(event) {
+    var keyPr = event.keyCode; //Key code of key pressed
+
+    if(keyPr === 39 && x<=460){ 
+        x = x+20; //right arrow add 20 from current
+    }
+    else if(keyPr === 37 && x>10){
+        x = x-20; //left arrow subtract 20 from current
+    }
+    else if(keyPr === 38 && y>10) {
+        y = y-20; //top arrow subtract 20 from current
+    }
+    else if(keyPr === 40 && y<=460){
+        y = y+20; //bottom arrow add 20 from current
+    }
+    else if(keyPr === 82){
+        ctx.clearRect(0,0,500,500);
+    }
+
+    //Drawing rectangle at new position
+    drawRect(x,y,w,h);
+    };
+</script>
 </body>
 </html>
