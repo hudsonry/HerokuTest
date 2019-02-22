@@ -7,7 +7,7 @@ h1{
     font-size: 150;
 }
 body{
-    background-image: linear-gradient(maroon, navy);
+    background-image: linear-gradient(green, blue, yellow, green);
     background-size: 100%;
     
 }
@@ -127,5 +127,5 @@ ul{
     left: 450px;
 }
 body{
-    color: white;
+    color: black;
 }
