@@ -18,42 +18,37 @@
     <div>Use Keyboard to draw, press r to clear screen</div>
 
 <script>
-    var stage = document.getElementById('svs'), // Get the canvas element by Id
-    ctx = stage.getContext('2d'), // Canvas 2d rendering context
-    x = 10, //intial horizontal position of drawn rectangle
-    y = 10, //intial vertical position of drawn rectangle
-    w = 20, //width of the drawn rectangle
-    h = 20; //height of the drawn rectangle
-
-    //Draw Rectangle function		
+    var stage = document.getElementById('svs'), 
+    ctx = stage.getContext('2d'), 
+    x = 10, 
+    y = 10, 
+    w = 20, 
+    h = 20; 
+	
     function drawRect(x,y,w,h) {
     ctx.fillStyle = 'white';
-    ctx.fillRect(x, y, w, h); //This will draw a rectangle of 20x20
+    ctx.fillRect(x, y, w, h); 
     }
 
-    drawRect(x,y,w,h); //Drawing rectangle on initial load
-
-    //move rectangle inside the canvas using arrow keys
     window.onkeydown = function(event) {
-    var keyPr = event.keyCode; //Key code of key pressed
+    var keyPr = event.keyCode; 
 
     if(keyPr === 39 && x<=460){ 
-        x = x+20; //right arrow add 20 from current
+        x = x+20; 
     }
     else if(keyPr === 37 && x>10){
-        x = x-20; //left arrow subtract 20 from current
+        x = x-20; 
     }
     else if(keyPr === 38 && y>10) {
-        y = y-20; //top arrow subtract 20 from current
+        y = y-20;
     }
     else if(keyPr === 40 && y<=460){
-        y = y+20; //bottom arrow add 20 from current
+        y = y+20; 
     }
     else if(keyPr === 82){
         ctx.clearRect(0,0,500,500);
     }
 
-    //Drawing rectangle at new position
     drawRect(x,y,w,h);
     };
 </script>
